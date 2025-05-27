@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Umbul Nogo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
   <header class="animate fade-down">
-    <h1>Umbul Nogo</h1>
+    <div class="logo">🌊 Umbul Nogo</div>
     <nav>
       <a href="#tentang">Tentang</a>
       <a href="#galeri">Galeri</a>
@@ -19,26 +20,49 @@
   </header>
 
   <section class="hero animate fade-in">
-    <h2>Selamat Datang di Umbul Nogo</h2>
-    <p>Keindahan alam yang menyegarkan dan alami.</p>
+    <h1>Selamat Datang di Umbul Nogo</h1>
+    <p>Wisata mata air alami yang menyegarkan jiwa dan raga.</p>
     <img src="umbul.jpg" alt="Foto Umbul Nogo" />
   </section>
 
   <section id="tentang" class="animate fade-up">
     <h2>Tentang Umbul Nogo</h2>
-    <p>Umbul Nogo adalah tempat wisata mata air alami yang terletak di [Nama Daerah]. Cocok untuk liburan keluarga, bermain air, dan bersantai di alam.</p>
+    <p>Umbul Nogo adalah tempat wisata mata air alami di [Nama Daerah]. Cocok untuk liburan keluarga, bermain air, dan bersantai di alam.</p>
   </section>
 
   <section id="galeri" class="animate fade-up">
     <h2>Galeri Foto</h2>
-    <img src="foto1.jpg" alt="Umbul Nogo 1" />
-    <img src="foto2.jpg" alt="Umbul Nogo 2" />
+    <div class="galeri">
+      <img src="foto1.jpg" alt="Umbul Nogo 1" />
+      <img src="foto2.jpg" alt="Umbul Nogo 2" />
+    </div>
   </section>
 
   <section id="lokasi" class="animate fade-up">
     <h2>Lokasi</h2>
     <p>Alamat: Dusun ..., Desa ..., Kecamatan ..., Kabupaten ...</p>
-    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300"></iframe>
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section id="form" class="animate fade-up">
+    <h2>Reservasi Kunjungan</h2>
+    <form action="mailto:wisataumbulnogo@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Nama" placeholder="Nama Lengkap" required>
+      <input type="tel" name="NoHP" placeholder="Nomor HP" required>
+      <input type="date" name="Tanggal" required>
+      <input type="number" name="Jumlah" placeholder="Jumlah Orang" required>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <section id="testimoni" class="animate fade-up">
+    <h2>Testimoni Pengunjung</h2>
+    <div class="testi">
+      <blockquote>"Airnya jernih dan suasananya tenang banget!"<br><strong>- Rina, Solo</strong></blockquote>
+      <blockquote>"Tempatnya cocok buat anak-anak, bersih dan alami."<br><strong>- Budi, Klaten</strong></blockquote>
+    </div>
   </section>
 
   <section id="kontak" class="animate fade-up">

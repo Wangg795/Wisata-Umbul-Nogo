@@ -1,14 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('.animate');
+document.addEventListener("DOMContentLoaded", function () {
+  const animElements = document.querySelectorAll(".animate");
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add("visible");
       }
     });
-  }, {
-    threshold: 0.1
   });
-
-  elements.forEach(el => observer.observe(el));
+  animElements.forEach(el => observer.observe(el));
 });
